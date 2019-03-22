@@ -7,13 +7,12 @@ import json
 res = requests.get("https://raw.githubusercontent.com/everypolitician/everypolitician-data/master/countries.json")
 body = json.loads(res.content)
 
-# code = body[0]["code"]
-#
-# print(code)
+# Search index for country
 
-belarus_code = body[20]["code"]
-
-print(belarus_code)
+# i = 0
+# for i, country in enumerate(body):
+#         print(country["name"])
+#         print(i)
 
 belarus_url = body[20]["legislatures"][0]["popolo_url"]
 
